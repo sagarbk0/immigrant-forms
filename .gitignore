@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+*.db
+backend/uploads/
+.env
+.venv/
+venv/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+npm-debug.log*
+yarn-error.log*
+
+# Misc
+.DS_Store
+.idea/
+.vscode/
+
+# Local-only reference material (assignment brief, etc.)
+*.local.pdf

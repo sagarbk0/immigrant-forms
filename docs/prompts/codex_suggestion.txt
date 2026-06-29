@@ -1,0 +1,16 @@
+Honestly: one hour is enough for a credible MVP, but not enough for a “very polished” project unless Sonnet generates mostly correct code on the first pass. So the strategy should change now: optimize for a working E2E demo and clean explanation, not completeness.
+Your best shot is:
+Backend first: FastAPI, SQLite, public lead submit, protected lead list, mark reached out.
+Email: console logging only. Absolutely keep SMTP out.
+Frontend: plain, ugly-but-functional Next.js pages: submit form, login, leads table.
+Docs: short but sharp README.md, DESIGN.md, NOTES.md.
+Video: show submit lead → console email logs → login → see lead → mark reached out.
+I would not spend time on fancy styling, deep tests, production auth polish, background jobs, real email, deployment, or Deep Research. Those are traps right now.
+The “follow-up interview” bar is probably: did you ship the requested workflow, did you make sane tradeoffs under time pressure, and can you explain agent usage honestly? A simple app that works beats a grand app that almost works.
+My hour plan would be:
+0-35 min: Generate/implement the whole app.
+35-45 min: Run it, fix only blockers.
+45-52 min: Write docs and NOTES.md.
+52-58 min: Record Loom.
+58-60 min: Submit.
+If you’re starting from nearly zero code, the goal is not “beautiful.” The goal is: working, coherent, documented, and honest about tradeoffs. That can absolutely be enough to earn a follow-up if the core flow works.
