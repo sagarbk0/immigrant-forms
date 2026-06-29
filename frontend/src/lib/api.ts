@@ -2,15 +2,15 @@ const API_URL = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:8000'
 
 export function getToken(): string | null {
   if (typeof window === 'undefined') return null
-  return localStorage.getItem('alma_token')
+  return localStorage.getItem('auth_token')
 }
 
 export function setToken(token: string): void {
-  localStorage.setItem('alma_token', token)
+  localStorage.setItem('auth_token', token)
 }
 
 export function clearToken(): void {
-  localStorage.removeItem('alma_token')
+  localStorage.removeItem('auth_token')
 }
 
 export interface LeadOut {

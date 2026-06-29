@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Alma Lead Management',
+  title: 'Lead Management',
   description: 'Immigration lead intake and management',
 }
 

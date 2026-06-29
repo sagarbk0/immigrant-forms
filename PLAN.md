@@ -34,7 +34,7 @@ Build a lead-management app:
 ## 1. Repository Layout (create exactly this)
 
 ```
-alma-forms/
+lead-management/
 ├── backend/
 │   ├── app/
 │   │   ├── __init__.py

@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.INFO)
 
 Base.metadata.create_all(bind=engine)
 
-app = FastAPI(title="Alma Lead Management")
+app = FastAPI(title="Lead Management")
 
 app.add_middleware(
     CORSMiddleware,

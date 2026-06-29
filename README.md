@@ -1,4 +1,4 @@
-# Alma — Lead Management
+# Lead Management
 
 A full-stack application for immigration lead intake and internal follow-up.
 

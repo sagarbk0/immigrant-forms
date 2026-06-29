@@ -41,7 +41,7 @@ def send_prospect_confirmation(lead) -> None:
                 f"Hi {lead.first_name},\n\n"
                 "Thank you for submitting your information. "
                 "An attorney will review your case and reach out to you soon.\n\n"
-                "Best regards,\nAlma"
+                "Best regards,\nThe Legal Team"
             ),
         )
     except Exception:

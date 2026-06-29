@@ -9,7 +9,7 @@ Here is a review of your plan, the email decision, and whether you need Deep Res
 
 ## 1. Review of the Plan vs. The Interviewer
 
-Looking at the profile of Alma's CTO, [the interviewer], who has an extensive background in **data infrastructure, ML platforms, and engineering leadership** at companies like Uber and SupportLogic. He cares deeply about clean architecture, system design, and production-ready structure.
+Looking at the profile of the company's CTO, [the interviewer], who has an extensive background in **data infrastructure, ML platforms, and engineering leadership** at companies like Uber and SupportLogic. He cares deeply about clean architecture, system design, and production-ready structure.
 
 Your plan hits exactly what an infrastructure-minded interviewer wants to see:
 
