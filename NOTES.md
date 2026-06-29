@@ -15,7 +15,7 @@
 | `backend/app/config.py` | Sonnet 4.6 | No | |
 | `backend/app/database.py` | Sonnet 4.6 | No | |
 | `backend/app/models.py` | Sonnet 4.6 | No | |
-| `backend/app/schemas.py` | Sonnet 4.6 | No | |
+| `backend/app/schemas.py` | Sonnet 4.6 | Yes — Opus added UTC timezone serializer | See Bugs section |
 | `backend/app/auth.py` | Sonnet 4.6 | No | |
 | `backend/app/email_service.py` | Sonnet 4.6 | No | |
 | `backend/app/routers/auth.py` | Sonnet 4.6 | No | |
@@ -31,6 +31,16 @@
 
 ## Bugs Caught / Fixed
 
-*(Fill in during the build — required by the assignment. Note any place Sonnet produced wrong or subtly bad code and how it was caught.)*
+- **Subtly bad code (Sonnet → fixed by Opus review): naive-UTC timestamps misread as local time.**
+  The backend serialized `created_at`/`updated_at` with no timezone marker, and the
+  frontend parsed them via `new Date(...)`, which treats an offset-less ISO string as
+  *local* time — silently shifting displayed dates by the viewer's UTC offset. It passed
+  `npm run build` and type-checking; caught during the Opus review by noticing the
+  smoke-test JSON had no `Z`/offset on `created_at`. Fixed with a Pydantic
+  `field_serializer` on `LeadOut` that marks timestamps as UTC and emits an explicit
+  offset (`backend/app/schemas.py`). See `docs/AGENT_USAGE.md` for the full writeup.
 
-- TBD — capture during Opus review pass
+- **Tooling gotcha (not app code): PowerShell mangled JSON in curl.**
+  During the backend smoke test, `curl -d '{\"k\":\"v\"}'` arrived as malformed JSON
+  because PowerShell rewrote the escaped quotes — the API correctly returned a 422. Not
+  a code bug; fixed the test by writing JSON to a file and using `curl --data-binary @file`.
