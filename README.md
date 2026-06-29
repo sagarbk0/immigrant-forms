@@ -47,7 +47,7 @@ API docs (Swagger) are auto-generated at http://localhost:8000/docs.
 
 ## Demo
 
-Screen recording of the end-to-end workflow: _<add Loom link here>_
+Screen recording of the end-to-end workflow: https://1drv.ms/v/c/f37fca3043e90ea1/IQDnST1BHWUBRLtd9emaV4ybAX_vZG0K9qNorjN4AcaN14I?e=jpKLa1
 
 ## Endpoints
 
