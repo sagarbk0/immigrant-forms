@@ -21,7 +21,11 @@
 | `backend/app/routers/auth.py` | Sonnet 4.6 | No | |
 | `backend/app/routers/leads.py` | Sonnet 4.6 | No | |
 | `backend/app/main.py` | Sonnet 4.6 | No | |
-| `frontend/` | Sonnet 4.6 | TBD after review | |
+| `frontend/src/app/layout.tsx` | Sonnet 4.6 | No | |
+| `frontend/src/app/page.tsx` | Sonnet 4.6 | No | Public lead form |
+| `frontend/src/app/login/page.tsx` | Sonnet 4.6 | No | Attorney login |
+| `frontend/src/app/leads/page.tsx` | Sonnet 4.6 | No | Internal dashboard |
+| `frontend/src/lib/api.ts` | Sonnet 4.6 | No | Fetch helpers + token storage |
 | `docs/DESIGN.md` | Sonnet 4.6 | TBD | |
 | `docs/RUNNING.md` | Sonnet 4.6 | TBD | |
 
